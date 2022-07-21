@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+      body{
+        display: flex;
+      }
+      #home{
+        width:150px;
+        height:50px;
+        border-radius: 0px;
+        margin:100px 0px 0px 200px;
+        background-color: black;
+        color: white;
+        font-family: "Merriweather";
+        padding:5px;
+        font-size:18px;
+      }
+        #container {
+  width: 25%;
+  margin: 60px 270px;
+  font-size: 20px;
+ 
+}
+form > input {
+  margin-bottom: 30px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  padding-left: 15px;
+  width: 125%;
+  border: 1px solid gray;
+}
+button {
+  font-size: 18px;
+  padding: 10px;
+  width: 60%;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+form > input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  width: 60%;
+  cursor: pointer;
+  border-radius: 30px;
+}
+hr {
+  width: 130%;
+  border: 0.5px solid gray;
+}
+
+    </style>
+</head>
+<body>
+  <button id="home" onclick="window.location.href='index.html'">GoTo  Home  <i class="fas fa-home"></i></button>
+    <div id="container">
+      <!-- <button id="home">Home</button> -->
+       <div id="sign">
+        <form id="form">
+            <h2>Sign in to Sephora</h2>
+            
+            <input type="email"  id="email" placeholder="Email Address*" >
+            <br>
+            <input type="text"  id="password" placeholder="Password*" >
+            <br>
+            <input type="submit"  id="signin" value="Sign In" >
+        </form>
+    </div>
+    <hr>
+    <div id="create">
+        <h2>New to Sephora?</h2>
+    <button id="createAccount">Create Account</button>
+</div>
+
+    </div>
+</body>
+</html>
+<script >
+var createArr=JSON.parse(localStorage.getItem("createItem"))||[];
+     var c=0;
+     document.querySelector("#form").addEventListener("submit",getIn);
+
+    function getIn(e){
+        
+         e.preventDefault();
+        var email=document.querySelector("#email").value;
+        var pwd=document.querySelector("#password").value;
+
+        
+        
+            // console.log(createArr[0].email,email,createArr[0].pass,pwd)
+            for(i=0;i<createArr.length;i++)
+            { 
+                if(createArr[i].email==email && createArr[i].pass==pwd)
+                {
+                    c=1;
+                    break;
+                }
+            }
+        
+        
+        if(c==1){
+            alert("Login Successfully");
+            window.location.href="index.html";
+        }
+        else{
+            alert("Email or Password is incorrect or You are a new user");
+        }
+    }
+
+document.getElementById('createAccount').addEventListener('click', function () {
+    console.log('clicked')
+    window.location.href = 'create.html'
+})
+</script>
