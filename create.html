@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,108 +8,121 @@
     <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        body{
+        body {
             display: flex;
         }
-        #home{
-        width:150px;
-        font-size:18px;
-        height:50px;
-        border-radius: 0px;
-        margin:100px 0px 0px 200px;
-        background-color: black;
-        color: white;
-        font-family: "Merriweather";
-        padding:5px;
-        border: 0;
-        cursor: pointer;
-      }
-        #container {
-  width: 35%;
-  margin: 40px auto;
-  
- 
-}
-h3{
-    text-align: center;
-}
-input{
-    margin-top: 25px;
-    width:96%;
-    font-size: 17px;
-  padding: 10px;
-  border-radius: 8px;
-  padding-left: 15px;
-  /* width: 125%; */
-  border: 1px solid gray;
-}
 
-#first{
-    width:41%;
-    margin-right:21px ;
-}
-#last{
-    width:42%;
-    
-}
-#dob{
-    margin-top: -4px;
-    width:30%;
-}
-h4{
-    padding-bottom: -20px;
-}
-input[type="submit"]{
-    width:40%;
-    border-radius: 35px;
-    background-color: black;
-    color:white;
-    border:0;
-    cursor: pointer;
-}
-h3{
-    font-size: 25px;
-}
-h1{
-    font-size: 35px;
-}
-p{
-    font-size: 18px;
-}
+        #home {
+            width: 150px;
+            font-size: 18px;
+            height: 50px;
+            border-radius: 0px;
+            margin: 100px 0px 0px 200px;
+            background-color: black;
+            color: white;
+            font-family: "Merriweather";
+            padding: 5px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        #container {
+            width: 35%;
+            margin: 40px auto;
+
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        input {
+            margin-top: 25px;
+            width: 96%;
+            font-size: 17px;
+            padding: 10px;
+            border-radius: 8px;
+            padding-left: 15px;
+            /* width: 125%; */
+            border: 1px solid gray;
+        }
+
+        #first {
+            width: 41%;
+            margin-right: 21px;
+        }
+
+        #last {
+            width: 42%;
+
+        }
+
+        #dob {
+            margin-top: -4px;
+            width: 30%;
+        }
+
+        h4 {
+            padding-bottom: -20px;
+        }
+
+        input[type="submit"] {
+            width: 40%;
+            border-radius: 35px;
+            background-color: black;
+            color: white;
+            border: 0;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
     </style>
 </head>
+
 <body>
-    <button id="home" onclick="window.location.href='sign.html'"><i class="fas fa-arrow-left"></i> GoTo signIn  </button>
+    <button id="home" onclick="window.location.href='signin.html'"><i class="fas fa-arrow-left"></i> GoTo signIn </button>
     <div id="container">
         <div id="display">
-           <h3>Create an Account</h3>
-           <hr>
-           <h1>Beauty Insider</h1>
-           <p>Join the Beauty Insider loyalty program. Earn points, redeem rewards, and more.</p>
+            <h3>Create an Account</h3>
+            <hr>
+            <h1>Beauty Insider</h1>
+            <p>Join the Beauty Insider loyalty program. Earn points, redeem rewards, and more.</p>
 
         </div>
         <div id="input">
-         <form >
-             
-             <input type="text"  id="first" placeholder="First Name">
-             
-             <input type="text"  id="last" placeholder="Last Name">
-             <br>
-             <input type="email"  id="email" placeholder="Email address">
-             <br>
-             <input type="text"  id="pass" placeholder="Password (6 to 12 characters) ">
-             <br>
-             <input type="number"  id="mobile" placeholder="Phone number">
-             <h4>Enter Date of Birth</h4>
-             <input type="date" id="dob"  >
-             <br>
-             <input type="submit" value="Join Now">
-         </form>
-     </div>
+            <form>
+
+                <input type="text" id="first" placeholder="First Name">
+
+                <input type="text" id="last" placeholder="Last Name">
+                <br>
+                <input type="email" id="email" placeholder="Email address">
+                <br>
+                <input type="text" id="pass" placeholder="Password (6 to 12 characters) ">
+                <br>
+                <input type="number" id="mobile" placeholder="Phone number">
+                <h4>Enter Date of Birth</h4>
+                <input type="date" id="dob">
+                <br>
+                <input type="submit" value="Join Now">
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
 <script src="create.js"></script>
