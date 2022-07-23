@@ -37,6 +37,6 @@ alert("Please create password depending on the length");
     createArr.push(createObj);
     localStorage.setItem("createItem",JSON.stringify(createArr));
     alert("ThankYou for Creating Account in Sephora");
-    window.location.href="./index.html";
+    window.location.href="./signin.html";
 }
 }

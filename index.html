@@ -8,9 +8,22 @@
     <title>sephora</title>
     <link rel="stylesheet" href="navbar.html">
     <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+            $('#footer').load('footer.html')
+        })
+      $(function(){
+            $('#navbar').load('navbar.html')
+        })
+    </script>
 </head>
 
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="box">
         <div id="pic1">
             <img src="https://www.sephora.com/contentimages/homepage/071922/Homepage/RWD/2022-07-21-hp-slide-july-clean-planet-positive-skincare-us-ca-rwd-slice.jpeg?imwidth=548"
@@ -113,7 +126,7 @@
     </div>
     <div class="L">
         <div class="L11">
-            <h2 >Beauty Offers</h2>
+            <h2>Beauty Offers</h2>
         </div>
         <div class="L22">
             <p>View all</p>
@@ -200,22 +213,29 @@
         </div>
     </div>
     <div class="L">
-       <div class="L11"><h2>Value Sets</h2></div> 
-        <div class="L22"><p>Show More</p></div>
+        <div class="L11">
+            <h2>Value Sets</h2>
+        </div>
+        <div class="L22">
+            <p>Show More</p>
+        </div>
     </div>
     <div id="box6">
         <div class="d4">
-            <img src="https://www.sephora.com/productimages/sku/s2468916-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=160" alt="Error">
+            <img src="https://www.sephora.com/productimages/sku/s2468916-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=160"
+                alt="Error">
             <h3>Tatcha</h3>
             <p>The Deep Cleanse Gentle Exfoliating Cleanser</p>
         </div>
         <div class="d4">
-            <img src="https://www.sephora.com/productimages/sku/s2031375-main-zoom.jpg?pb=2020-03-allure-best-2019&imwidth=160" alt="Error">
+            <img src="https://www.sephora.com/productimages/sku/s2031375-main-zoom.jpg?pb=2020-03-allure-best-2019&imwidth=160"
+                alt="Error">
             <h3>The Ordinary</h3>
             <p>Hyaluronic Acid 2% + B5 Hydrating Serum</p>
         </div>
         <div class="d4">
-            <img src="https://www.sephora.com/productimages/sku/s1686153-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=160" alt="Error">
+            <img src="https://www.sephora.com/productimages/sku/s1686153-main-zoom.jpg?pb=2020-03-sephora-value-2020&imwidth=160"
+                alt="Error">
             <h3>The Ordinary</h3>
             <p>Bright Future Gel Serum Under Eye Concealer</p>
         </div>
@@ -234,6 +254,139 @@
             <h3>COLOR WOW</h3>
             <p>Dream Coat Supernatural Spray Anti-Frizz Treatment</p>
         </div>
+    </div>
+    <div id="middle">
+        <h2>Beauty Insider Rewards</h2>
+        <p>singin to reedem your Points.</p>
+    </div>
+    <div id="box7">
+        <div class="d5">
+            <img src="https://www.sephora.com/productimages/sku/s2580611-main-zoom.jpg?imwidth=160" alt="Error">
+            <h3>Lancome</h3>
+            <p>UV Expert Aquagel Defance Sunscreen,</p>
+            <h2>100 points</h2>
+            <button>Sing in to Access</button>
+        </div>
+        <div class="d5">
+            <img src="https://www.sephora.com/productimages/sku/s2526713-main-zoom.jpg?imwidth=160" alt="Error">
+            <h3>Drunk Elephant</h3>
+            <p>T.L.C. Sukari Babyfacial™ AHA + BHA Mask</p>
+            <h2>100 points</h2>
+            <button>Sing in to Access</button>
+        </div>
+        <div class="d5">
+            <img src="https://www.sephora.com/productimages/sku/s2609964-main-zoom.jpg?imwidth=160" alt="Error">
+            <h3>CAY SKIN</h3>
+            <p>ICE glow face moistuirzer with SPF 45</p>
+            <h2>100 points</h2>
+            <button>Sing in to Access</button>
+        </div>
+        <div class="d5">
+            <img src="https://www.sephora.com/productimages/sku/s2582864-main-zoom.jpg?imwidth=160" alt="Error">
+            <h3>Biossence</h3>
+            <p>Squalane + 10% Vitamin C Dark Spot Serum</p>
+            <h2>100 points</h2>
+            <button>Sing in to Access</button>
+        </div>
+        <div class="d5">
+            <img src="https://www.sephora.com/productimages/sku/s2588226-main-zoom.jpg?imwidth=160" alt="Error">
+            <h3>ILIA</h3>
+            <p>True Skin Radiant Priming Serum</p>
+            <h2>100 points</h2>
+            <button>Sing in to Access</button>
+        </div>
+        <div class="d5">
+            <img src="https://www.sephora.com/productimages/sku/s2604361-main-zoom.jpg?imwidth=160" alt="Error">
+            <h3>MILK MAKEUP</h3>
+            <p>Pore Eclipse Mattifying + Blurring Makeup Primer</p>
+            <h2>100 points</h2>
+            <button>Sing in to Access</button>
+        </div>
+    </div>
+    <div id="box8">
+        <div>
+            <h2>Features Catagory</h2>
+            <p>Shop whats popular now</p>
+        </div>
+        <div>
+            <div class="d6">
+                <p>Minis</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_minis_us_ca_rwd_slice.png" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Hair style</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_hair_blowdryer_us_ca_rwd_slice.jpg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Foundation</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png" alt="Error">
+            </div>
+            <div class="d6">
+                <p>SPF</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/sun.png" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Hair Mask</p>
+                <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/healthy_hair_guide.svg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Perfume</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_fragrance_bottle_us_ca_rwd_slice.jpg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>collections</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_sephoracollection_SC_us_ca_rwd_slice.jpg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Makeups </p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_makeup_mascara_lipstick_us_ca_rwd_slice.jpg" alt="Error">
+            </div>
+        </div>
+
+    </div>
+    <div id="box9">
+        <div>
+            <h2>Need a Guidance?</h2>
+            <p>Check out and buying guides .</p>
+        </div>
+        <div>
+            <div class="d6">
+                <p>Plant Clean</p>
+                <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_guide.svg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>No Makeup</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/blush.png" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Fragrance</p>
+                <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrance_quiz.svg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Skincare</p>
+                <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_quiz.svg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Routine</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_skincare_quiz_us_ca_rwd_slice.png" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Haircare</p>
+                <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/hair_quiz.svg" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Brands</p>
+                <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_BOB_us_rwd_slice.png" alt="Error">
+            </div>
+            <div class="d6">
+                <p>Beauty </p>
+                <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/luxury_beauty.svg" alt="Error">
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        
     </div>
 </body>
 
